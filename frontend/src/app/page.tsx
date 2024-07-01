@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen min-w-full flex-col items-center selahadin" >
+    <main className="flex min-h-screen min-w-full flex-col items-center" >
       <TopBar />
       <Hero />
       <Landing />

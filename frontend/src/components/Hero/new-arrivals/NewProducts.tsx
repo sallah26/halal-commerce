@@ -8,7 +8,7 @@ import React from 'react'
 import samsungUltra from "../../assets/new-products/smsngUltra.webp"
 import { Badge } from '@/components/ui/badge'
 
-import VerticalSlider from './verticalSlider.jsx'
+import VerticalSlider from './verticalSlider'
 
 export default function NewProducts() {
    
@@ -25,7 +25,7 @@ export default function NewProducts() {
         </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-14">
         <div className="single flex flex-col gap-4">
-            <Card className="w-full border-[2px] border-slate-200 p-8 shadow-xl flex flex-col">
+            <Card className="w-full border-[2px] border-slate-300 p-8 shadow-xl flex flex-col">
                 <div className="flex w-full flex-col gap-2">
                   <div className="flex justify-between">
 
@@ -36,12 +36,12 @@ export default function NewProducts() {
                     <p className='text-lg w-3/4 space-y-4'>Smart and Lauxary Smart phone made for those who have nice and best mindset</p>
                 </div>
             
-            <div className="flex w-full justify-center p-10">
-                <Image src={samsungUltra} width={350} alt='samsung products' height={120} />
+            <div className="flex w-full justify-center p-5">
+                <Image src={samsungUltra} width={311} alt='samsung products' height={120} />
             </div>
-            <div className="flex w-1/2 items-center gap-2 justify-center">
+            <div className="flex w-1/2 items-center  mt-2 justify-center">
             
-            <Button variant="commerce" size="commerce" className=''>Buy it Now </Button><ArrowRight />
+            <Button variant="commerce" size="commerce" className='w-full flex justify-center gap-3 text-lg'>Buy it Now <ArrowRight /></Button>
             </div>
             </Card>
         </div>

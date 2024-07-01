@@ -81,13 +81,13 @@ export default function VerticalSlider() {
       options={ {
         type: 'loop',
         gap: '1.2rem',
-        // autoplay: true,
+        autoplay: true,
         pagination: false,
         arrows: false,
         interval: 2000,
         direction: 'ttb',
         perPage: 3,
-        height   : '41rem',
+        height   : '39rem',
         focus    : 'center',
         autoWidth: true,
         wheel    : true,
@@ -98,17 +98,17 @@ export default function VerticalSlider() {
     >
       {productsData.map((data) => (
         <SplideSlide key={data.id}>
-          <div className=" rounded-xl border-[2px]  border-slate-300 shadow-xl max-h-80 w-full flex  ">
-            <div className="grid grid-cols-5 bg-slate-500">
-                {/* <div className='col-span-2'> */}
-                    <Image src={data.img} height={30} width={200} alt={`${data.title} image`} className='col-span-2 p-3  rounded-3xl' />
-                {/* </div> */}
-                {/* <div className='col-span-3 p-2 ml-2 flex flex-col justify-between'>
-                  <div className="flex justify-between">
+          <div className=" rounded-xl border-[2px]   border-slate-300 min-h-full shadow-xl w-full flex  ">
+            <div className="grid grid-cols-3">
+              <div className="col-span-1 ">
+              <Image src={data.img} alt={`${data.title} image`} className='h-full p-3  rounded-3xl' />
+              </div>
+              <div className="col-span-2 p-2 flex flex-col justify-between">
+              <div className="flex justify-between">
                     <p className='text-xl font-semibold'>{data.title}</p>
                     <Badge variant="newSm">New</Badge>
                   </div>
-                  <p className='pt-2 pr-5'>{data.description}</p>
+                  <p className='pt-2 pr-5 line-clamp-2'>{data.description}</p>
                   <div className="rate flex gap-1 mt-2 items-center">
                     <Star fill="gold" color="gold" size={18}/>
                     <Star fill="gold" color="gold" size={18}/>
@@ -124,9 +124,9 @@ export default function VerticalSlider() {
                     <Separator orientation="vertical" />
                     <Button className="" variant="commerceOutline">Buy Now</Button>
                   </div>
-                </div> */}
+              </div>
             </div>
-            </div>
+          </div>
         </SplideSlide>
       ))}
         

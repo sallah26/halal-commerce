@@ -3,6 +3,7 @@ import Category from './category/Category'
 import FeauterdProducts from './feautered/FeauterdProducts'
 import NewProducts from './new-arrivals/NewProducts'
 import Discount from './discount/Discount'
+import Features from './feauter/Features'
 
 export default function Landing() {
   return (
@@ -12,6 +13,7 @@ export default function Landing() {
         <FeauterdProducts />
         <NewProducts />
         <Discount />
+        <Features />
       </div>
       </div>
   )
