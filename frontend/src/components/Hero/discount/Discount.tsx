@@ -112,9 +112,9 @@ export default function Discount() {
       aria-label="My Favorite Images"
     >
       {DiscountData.map((data) => (
-        <SplideSlide key={data.id}>
+        <SplideSlide key={data.id} className="flex items-center justify-center">
          
-          <Image src={data.img} alt={`imggg`} width={400} className='w-full p-3 h-full rounded-3xl ' />
+          <Image src={data.img} alt={`imggg`} width={350} className='p-3 rounded-3xl ' />
         </SplideSlide>
       ))}
         

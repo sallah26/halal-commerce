@@ -4,6 +4,7 @@ import FeauterdProducts from './feautered/FeauterdProducts'
 import NewProducts from './new-arrivals/NewProducts'
 import Discount from './discount/Discount'
 import Features from './feauter/Features'
+import Subscribe from './subscribe/Subscribe'
 
 export default function Landing() {
   return (
@@ -14,6 +15,7 @@ export default function Landing() {
         <NewProducts />
         <Discount />
         <Features />
+        <Subscribe />
       </div>
       </div>
   )

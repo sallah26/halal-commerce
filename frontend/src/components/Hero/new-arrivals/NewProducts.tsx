@@ -18,10 +18,7 @@ export default function NewProducts() {
       <div className="flex flex-col">
         <div className="flex items-center  justify-between">
             <p className='py-5 text-3xl font-semibold'>New Arrivals</p>
-            <div className="flex items-center gap-2 justify-center">
-
-            <Button variant="commerce" size="commerce" className=''>View All Products </Button><ArrowRight />
-            </div>
+            <Button variant="commerce" size="commerce" className='flex items-center gap-2 justify-center'>View All Products <ArrowRight /></Button>
         </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-14">
         <div className="single flex flex-col gap-4">
