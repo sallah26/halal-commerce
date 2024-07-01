@@ -3,40 +3,37 @@
 # dependencies
 /frontend/node_modules
 /frontend/.pnp
-/fronten/.pnp.js
-/fronten/.yarn/install-state.gz
+/frontend/.pnp.js
+/frontend/.yarn/install-state.gz
 
 # testing
-/fronten/coverage
+/frontend/coverage
 
 # next.js
-/fronten/.next/
-/fronten/out/
+/frontend/.next/
+/frontend/out/
 
 # production
-/fronten/build
+/frontend/build
 
 # misc
-/fronten/.DS_Store
-/fronten/*.pem
+/frontend/.DS_Store
+/frontend/*.pem
 
 # debug
-/fronten/npm-debug.log*
-/fronten/yarn-debug.log*
-/fronten/yarn-error.log*
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
 
 # local env files
-/fronten/.env*.local
+/frontend/.env*.local
 
 # vercel
-/fronten/.vercel
+/frontend/.vercel
 
 # typescript
-/fronten/*.tsbuildinfo
-/fronten/next-env.d.ts
-
-
-
+/frontend/*.tsbuildinfo
+/frontend/next-env.d.ts
 
 ############################
 # OS X
@@ -50,13 +47,11 @@
 /backend/.Trashes
 /backend/._*
 
-
 ############################
 # Linux
 ############################
 
 /backend/*~
-
 
 ############################
 # Windows
@@ -70,7 +65,6 @@
 /backend/*.msi
 /backend/*.msm
 /backend/*.msp
-
 
 ############################
 # Packages
@@ -100,7 +94,6 @@
 /backend/*.out
 /backend/*.pid
 
-
 ############################
 # Logs and databases
 ############################
@@ -110,7 +103,6 @@
 /backend/*.sql
 /backend/*.sqlite
 /backend/*.sqlite3
-
 
 ############################
 # Misc.
