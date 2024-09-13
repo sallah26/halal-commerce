@@ -49,7 +49,7 @@ import { Star } from "lucide-react";
           <Star fill="gold" color="gold" size={15}/>
           <Star fill="gold" color="gold" size={15}/>
           <Star fill="gold" color="gold" size={15}/>
-          <p className="text-sm ml-0.5 font-semibold">5.0</p>
+          <p className="text-sm ml-0.5 font-semibold">4.0</p>
          </div>
         </CardContent>
         <div className="px-4 pb-3 flex gap-2 justify-between items-center">
