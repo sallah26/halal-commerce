@@ -39,8 +39,8 @@ export default function Features() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {featuresData.map((feature) => {
               return (
-                <div className=" rounded-xl border-[2px]   border-slate-300 shadow-xl flex flex-col items-center justify-center gap-4 p-4">
-                    <Image src={feature.img} alt={`features img`} width={250}/>
+                <div key={feature.id} className=" rounded-xl border-[2px]   border-slate-300 shadow-xl flex flex-col items-center justify-center gap-4 p-4">
+                    <Image src={feature.img} alt="features img" width={250}/>
                     <p className="text-2xl font-semibold">{feature.title}</p>
                     <p className="text-lg text-center">{feature.description}</p>
                 </div>

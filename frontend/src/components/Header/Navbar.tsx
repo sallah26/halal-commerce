@@ -15,7 +15,7 @@ export default function Navbar() {
                 <Image src={logo} alt='Logo' width={200} height={70} /></Link>
                 <Link href="/" className='opacity-60 hover:opacity-100'>Categories</Link>
                 <Link href="/" className='opacity-60 hover:opacity-100'>Deels</Link>
-                <Link href="/" className='opacity-60 hover:opacity-100'>What's New</Link>
+                <Link href="/" className='opacity-60 hover:opacity-100'>Whats New</Link>
                 <Link href="/" className='opacity-60 hover:opacity-100'>Delivery</Link>
             </div>
             <div className="profile  flex items-center gap-10">

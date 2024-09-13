@@ -125,7 +125,7 @@ export default function Discount() {
                   <p className='text-xl font-semibold text-red-600 flex gap-1 items-center'><Biohazard color='red' fill='red' /> Monthly Discounts for you</p>
                   {/* <p className='text-6xl font-bold mb-5'>00d:00h:00:00</p> */}
                   <p className='text-4xl font-semibold '>Up To 40% off on Digital Items</p>
-                  <p className='text-lg pr-10 '>Discover amazing deals and save big with up to 40% off on digital items this month. Enjoy up to 40% off on your favorite digital products—don't miss out on these fantastic savings!</p>
+                  <p className='text-lg pr-10 '>Discover amazing deals and save big with up to 40% off on digital items this month. Enjoy up to 40% off on your favorite digital products—dont miss out on these fantastic savings!</p>
                   <Button variant="commerce" size="commerce" className='flex max-w-60 mt-5 items-center gap-5 justify-center'>Buy it Now <ArrowRight /></Button>
 
                 </div>

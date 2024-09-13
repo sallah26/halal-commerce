@@ -1,9 +1,9 @@
 interface ProductCardProps {
-    title: string;
-    img: string;
-    description: string;
-    price: number;
-  }
+  img: string | StaticImageData;
+  price: number;
+  title: string;
+  description: string;
+}
   import * as React from "react"
 
   import imggg from "../../assets/Feauterd-products/Camera.png"
@@ -26,7 +26,7 @@ interface ProductCardProps {
     SelectTrigger,
     SelectValue,
   } from "@/components/ui/select"
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { Star } from "lucide-react";
   
   const ProductCard: React.FC<ProductCardProps> = ({ title:title, description:description, img:img,  price:price }) => {
