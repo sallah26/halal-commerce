@@ -1,3 +1,4 @@
+import Navbar from "@/components/Header/Navbar";
 import "./globals.css";
 
 import TopBar from "@/components/Header/TopBar";
@@ -9,8 +10,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen min-w-full flex-col items-center" >
+    <main className="flex min-h-screen min-w-full flex-col items-center px-3" >
       <TopBar />
+      <Navbar />
       <Hero />
       <Landing />
       <Footer />

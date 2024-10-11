@@ -31,15 +31,15 @@ export default function Features() {
     }
   ]
   return (
-    <div className=" w-full my-14 flex flex-col items-start max-h-[37rem]" >
+    <div className=" w-full my-44 lg:my-14 p-4 flex flex-col items-start max-h-[37rem]" >
         <div className="flex items-center  justify-between">
             <p className='py-5 text-3xl font-semibold'>Our Dedicated features</p>
             {/* <Button variant="commerce" size="commerce" className='flex items-center gap-2 justify-center'>View All Products <ArrowRight /></Button> */}
         </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="flex flex-wrap gap-5">
             {featuresData.map((feature) => {
               return (
-                <div key={feature.id} className=" rounded-xl border-[2px]   border-slate-300 shadow-xl flex flex-col items-center justify-center gap-4 p-4">
+                <div key={feature.id} className=" rounded-xl border-[2px] w-full md:max-w-72  border-slate-300 shadow-xl flex flex-col items-center justify-center gap-4 p-4">
                     <Image src={feature.img} alt="features img" width={250}/>
                     <p className="text-2xl font-semibold">{feature.title}</p>
                     <p className="text-lg text-center">{feature.description}</p>

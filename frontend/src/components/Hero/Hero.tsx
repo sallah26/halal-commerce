@@ -7,13 +7,12 @@ import Slider from './slider/Slider'
 export default function Hero() {
   return (
     <div  >
-
+ 
     <div className="hero-section">
       <div className="content">
 
 
       <div className='hero flex flex-col items-center justify-center'>
-          <Navbar />
           <Slider />
       </div>
     </div>

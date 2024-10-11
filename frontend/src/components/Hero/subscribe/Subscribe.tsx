@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function Subscribe() {
   return (
-    <div className=" w-full my-14 lg:my-20 flex flex-col items-center max-h-[37rem]" >
+    <div className=" w-full my-96 p-4 lg:my-20 flex flex-col items-center max-h-[37rem]" >
  
       <div className="flex flex-col md:flex-row gap-5 justify-between items-center">
         <div className="txt lg:w-1/2">

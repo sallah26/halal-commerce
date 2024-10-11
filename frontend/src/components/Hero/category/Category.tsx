@@ -42,20 +42,15 @@ export default function Category() {
       path: "/category",
       icon: Shirt,
     },
-    {
-      id: 7,
-      title: 'Clothing',
-      path: "/category",
-      icon: Shirt,
-    },
+   
    
   ];
 
   return (
-    <div className=" w-full my-14 flex flex-col items-start justify-center" >
+    <div className=" w-full my-14 flex flex-col items-center lg:items-start justify-center p-4" >
       <div className="flex flex-col ">
         <p className='py-5 text-3xl font-semibold'>Browse products by category</p>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-7">
+      <div className="flex flex-wrap gap-7">
 
       {categoryData.map((category) => (
         

@@ -74,13 +74,13 @@ export default function FeauterdProducts() {
       ]
       
   return (
-    <div className=" w-full my-14 flex flex-col items-center justify-center" >
+    <div className=" w-full my-4 md:my-14 p-4 min-w-80 flex flex-col items-center justify-center" >
       <div className="flex flex-col">
-        <div className="flex items-center  justify-between">
-            <p className='py-5 text-3xl font-semibold'>Featured Products</p>
-            <Button variant="commerce" size="commerce" className='flex items-center gap-2 justify-center'>View All Products <ArrowRight /></Button>
+        <div className="flex items-center flex-wrap  justify-between">
+            <p className='py-2 md:py-5 text-3xl font-semibold'>Featured Products</p>
+            <Button variant="commerce" size="commerce" className='flex items-center gap-2 justify-center mb-4 md:mb-0'>View All Products <ArrowRight /></Button>
         </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 gap-y-14">
+      <div className="flex flex-wrap gap-7  md:gap-y-14">
         
         {productsData.map((product) => (
           <ProductCard key={product.id} img={product.img} price={product.price} title={product.title} description={product.description} />

@@ -10,7 +10,7 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <div className='w-full flex items-center justify-center text-white bg-PrimaryColor'>
+    <div className='w-full flex items-center justify-center text-white p-0 bg-PrimaryColor'>
         <div className=" max-w-[1300px] my-14 w-full justify-between lg:my-20 flex flex-col md:flex-row items-center max-h-[37rem]" >
             <div className="flex flex-col gap-4">
                 <Image src={logo} width={250} alt='logo'/>

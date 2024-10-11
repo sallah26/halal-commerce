@@ -106,9 +106,9 @@ export default function VerticalSlider() {
               <div className="col-span-2 p-2 flex flex-col justify-between">
               <div className="flex justify-between">
                     <p className='text-xl font-semibold'>{data.title}</p>
-                    <Badge variant="newSm">New</Badge>
+                    <Badge variant="newSm" className='hidden md:block'>New</Badge>
                   </div>
-                  <p className='pt-2 pr-5 line-clamp-2'>{data.description}</p>
+                  <p className='pt-2 pr-5 line-clamp-1'>{data.description}</p>
                   <div className="rate flex gap-1 mt-2 items-center">
                     <Star fill="gold" color="gold" size={18}/>
                     <Star fill="gold" color="gold" size={18}/>
@@ -121,7 +121,7 @@ export default function VerticalSlider() {
                     <p className='text-2xl font-semibold'>${data.price}</p>
                     <Separator orientation="vertical" />
                     <Verified size={35} fill='green' color='white'/>
-                    <Separator orientation="vertical" />
+                    <Separator orientation="vertical" className='hidden md:block'/>
                     <Button className="" variant="commerceOutline">Buy Now</Button>
                   </div>
               </div>
