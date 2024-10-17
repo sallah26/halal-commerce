@@ -54,24 +54,24 @@ export default function Timer() {
     
         <div className="flex justify-center items-center space-x-3 text-PrimaryColor">
           <div className="flex flex-col items-center">
-            <span className="text-6xl font-semibold">{days}</span>
+            <span className="text-3xl md:text-6xl font-semibold">{days}</span>
             <span className="text-gray-600">Days</span>
           </div>
-          <p className="text-5xl mt-2 flex h-full font-bold">:</p>
+          <p className="text-3xl md:text-5xl mt-2 flex h-full font-bold">:</p>
           <div className="flex flex-col items-center">
-            <span className="text-6xl font-semibold">{hours}</span>
+            <span className="text-3xl md:text-6xl font-semibold">{hours}</span>
             <span className="text-gray-600">Hours</span>
           </div>
-          <p className="text-5xl mt-2 flex h-full font-bold">:</p>
+          <p className="text-3xl md:text-5xl mt-2 flex h-full font-bold">:</p>
           
           <div className="flex flex-col items-center">
-            <span className="text-6xl font-semibold">{minutes}</span>
+            <span className="text-3xl md:text-6xl font-semibold">{minutes}</span>
             <span className="text-gray-600">Minutes</span>
           </div>
-          <p className="text-5xl mt-2 flex h-full font-bold">:</p>
+          <p className="text-3xl md:text-5xl mt-2 flex h-full font-bold">:</p>
           
           <div className="flex flex-col items-center">
-            <span className="text-6xl font-semibold">{seconds}</span>
+            <span className="text-3xl md:text-6xl font-semibold">{seconds}</span>
             <span className="text-gray-600">Seconds</span>
           </div>
         </div>

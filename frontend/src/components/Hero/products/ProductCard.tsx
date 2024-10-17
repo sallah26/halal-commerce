@@ -23,7 +23,7 @@ import { Star } from "lucide-react";
   
   const ProductCard: React.FC<ProductCardProps> = ({ title, description, img,  price }) => {
     return (
-      <Card className="w-[317px] border-[2px] shadow-xl flex flex-col">
+      <Card className="w-screen max-w-[317px] border-[2px] shadow-xl flex flex-col">
         <CardHeader className="flex flex-col items-center justify-center">
             <Image  src={img} alt={`${title} image`} width={230} height={23} className="w-40 md:w-60"/>
         </CardHeader>

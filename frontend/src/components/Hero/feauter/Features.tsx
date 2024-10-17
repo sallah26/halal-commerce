@@ -25,18 +25,15 @@ export default function Features() {
     }
   ]
   return (
-    <div className=" w-full my-44 lg:my-14 flex flex-col items-start max-h-[37rem]" >
-        <div className="flex items-center  justify-between">
-            <p className='py-5 text-3xl font-semibold'>Our Dedicated features</p>
-            {/* <Button variant="commerce" size="commerce" className='flex items-center gap-2 justify-center'>View All Products <ArrowRight /></Button> */}
-        </div>
+    <div className=" w-full my-44 lg:my-14 flex flex-col gap-2 items-start max-h-[37rem]" >
+            <p className='md:py-5 text-2xl md:text-3xl font-semibold'>Our Dedicated features</p>
           <div className="flex flex-wrap gap-5">
             {featuresData.map((feature) => {
               return (
-                <div key={feature.id} className=" rounded-xl border-[2px] w-full md:max-w-[390px]  border-slate-300 shadow-xl flex flex-col items-center justify-center gap-4 p-4">
-                    <Image src={feature.img} alt="features img" width={280} height={100}/>
-                    <p className="text-2xl font-semibold">{feature.title}</p>
-                    <p className="text-lg text-center">{feature.description}</p>
+                <div key={feature.id} className=" rounded-xl border-[2px] w-full md:max-w-[390px]  border-slate-300 shadow-xl flex flex-col items-center justify-center gap-2 p-4">
+                    <Image src={feature.img} alt="size-10" width={250} height={100}/>
+                    <p className="text-xl text-PrimaryColor md:text-2xl font-semibold">{feature.title}</p>
+                    <p className="text-md md:text-lg text-center">{feature.description}</p>
                 </div>
               )
             })}

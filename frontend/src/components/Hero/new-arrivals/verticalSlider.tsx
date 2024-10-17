@@ -72,14 +72,27 @@ export default function VerticalSlider() {
     <Splide
       options={ {
         type: 'loop',
-        gap: '1.2rem',
+        perPage: 3,
+        gap: '0.1rem',
+        height: "39rem",
+
+                // make it responsive
+        breakpoints: {
+       
+       
+          700: {
+            gap: '1rem',
+            height: "20rem",
+            perPage: 2,
+          },
+         
+        },
         autoplay: true,
         pagination: false,
         arrows: false,
+        heightRatio: 0.5,
         interval: 2000,
         direction: 'ttb',
-        perPage: 3,
-        height   : '39rem',
         focus    : 'center',
         autoWidth: true,
         wheel    : true,
@@ -89,18 +102,22 @@ export default function VerticalSlider() {
       aria-label="My Favorite Images"
     >
       {productsData.map((data) => (
-        <SplideSlide key={data.id}>
-          <div className=" rounded-xl border-[2px]   border-slate-300 min-h-full shadow-xl w-full flex  ">
+        <SplideSlide key={data.id} >
+          <div className=" rounded-xl border-[2px]  border-slate-300  shadow-xl w-full flex  mb-3">
             <div className="grid grid-cols-3">
-              <div className="col-span-1 ">
-              <Image src={data.img} alt={`${data.title} image`} width={100} height={100} className='h-full p-3  rounded-3xl' />
+              <div className="col-span-1 my-2">
+                <Image src={data.img} alt={`${data.title} image`} width={250} height={60} className='h-full  rounded-3xl' />
               </div>
-              <div className="col-span-2 p-2 flex flex-col justify-between">
-              <div className="flex justify-between">
-                    <p className='text-xl font-semibold'>{data.title}</p>
-                    <Badge variant="newSm" className='hidden md:block'>New</Badge>
+              <div className="col-span-2 p-2 flex flex-col gap-0.5 md:justify-between">
+                  <div className="flex justify-between">
+                    <p className='text-lg md:text-xl line-clamp-1 font-semibold'>{data.title}</p>
+                    <div className="flex items-center gap-1">
+
+                    <Badge variant="newSm" className=''>New</Badge>
+                    <Verified size={25} fill='green' className='flex md:hidden' color='white'/>
+                    </div>
                   </div>
-                  <p className='pt-2 pr-5 line-clamp-1'>{data.description}</p>
+                  <p className='pt-2 pr-5 line-clamp-1 md:line-clamp-2'>{data.description}</p>
                   <div className="rate flex gap-1 mt-2 items-center">
                     <Star fill="gold" color="gold" size={18}/>
                     <Star fill="gold" color="gold" size={18}/>
@@ -112,7 +129,7 @@ export default function VerticalSlider() {
                   <div className="flex justify-between mt-3 items-center">
                     <p className='text-2xl font-semibold'>${data.price}</p>
                     <Separator orientation="vertical" />
-                    <Verified size={35} fill='green' color='white'/>
+                    <Verified size={35} fill='green' className='hidden md:flex' color='white'/>
                     <Separator orientation="vertical" className='hidden md:block'/>
                     <Button className="" variant="commerceOutline">Buy Now</Button>
                   </div>

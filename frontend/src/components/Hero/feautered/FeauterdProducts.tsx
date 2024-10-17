@@ -68,7 +68,7 @@ export default function FeauterdProducts() {
   return (
     <div className=" w-full my-4 md:my-14 min-w-80 flex flex-col gap-4 items-start md:items-center justify-center" >
         <div className="w-full flex items-center flex-wrap  justify-between">
-            <p className=' md:py-5 text-2xl md:text-3xl font-semibold'>Featured Products</p>
+            <p className=' md:py-5 text-2xl md:text-3xl font-semibold mx-3'>Featured Products</p>
             <Button variant="commerce" size="commerce" className='hidden md:flex items-center gap-2 justify-center mb-4 md:mb-0'>View All Products <ArrowRight /></Button>
         </div>
       <div className="flex flex-wrap gap-6  md:gap-y-10 justify-center">
@@ -78,7 +78,7 @@ export default function FeauterdProducts() {
         ))}
         
       </div>
-      <Button variant="commerce" size="commerce" className='flex md:hidden items-center gap-2 justify-center mb-4 md:mb-0'>View All Products <ArrowRight /></Button>
+      <Button variant="commerce" size="commerce" className='mx-3 flex md:hidden items-center gap-2 justify-center mb-4 md:mb-0'>View All Products <ArrowRight /></Button>
     </div>
   )
 }

@@ -74,15 +74,14 @@ export default function Discount() {
     },
   ]
   return (
-    <div className=" w-full my-14 flex flex-col p-4 items-start max-h-[37rem]" >
-      <div className="flex flex-col ">
-        <div className=" rounded-xl p-4 border-[2px] border-slate-300 shadow-xl w-full flex  ">
+    <div className=" w-full my-14 flex flex-col items-start max-h-[37rem]" >
+        <div className=" rounded-xl  border-[2px] border-slate-300 shadow-xl w-full flex  p-1">
             <div className="flex w-full flex-col lg:flex-row">
+            <p className='text-lg md:text-xl font-semibold text-red-600 flex  md:hidden gap-1 items-center'><Biohazard color='red' fill='red' /> Monthly Discounts for you</p>
                 <div className='w-full lg:w-2/6'>
                 <Splide
       options={ {
         type: 'loop',
-        // gap: '1.2rem',
         autoplay: true,
         pagination: false,
         arrows: false,
@@ -104,17 +103,14 @@ export default function Discount() {
                 </div>
                 <div className='col-span-4 py-2 mr-10 flex flex-col justify-center items-start gap-3'>
                   <Timer />
-                  <p className='text-xl font-semibold text-red-600 flex gap-1 items-center'><Biohazard color='red' fill='red' /> Monthly Discounts for you</p>
+                  <p className='text-lg md:text-xl font-semibold text-red-600 hidden md:flex gap-1 items-center'><Biohazard color='red' fill='red' /> Monthly Discounts for you</p>
                   {/* <p className='text-6xl font-bold mb-5'>00d:00h:00:00</p> */}
-                  <p className='text-4xl font-semibold '>Up To 40% off on Digital Items</p>
-                  <p className='lg:text-lg pr-10 '>Discover amazing deals and save big with up to 40% off on digital items this month. Enjoy up to 40% off on your favorite digital products—dont miss out on these fantastic savings!</p>
-                  <Button variant="commerce" size="commerce" className='flex max-w-60 mt-5 items-center gap-5 justify-center'>Buy it Now <ArrowRight /></Button>
-
+                  <p className='text-3xl text-PrimaryColor md:text-4xl font-semibold '>Up To 40% off on Digital Items</p>
+                  <p className='lg:text-lg lg:pr-10 '>Discover amazing deals and save big with up to 40% off on digital items this month. Enjoy up to 40% off on your favorite digital products—dont miss out on these fantastic savings!</p>
+                  <Button variant="commerce" size="commerce" className='flex max-w-60 lg:mt-4 items-center gap-2 md:gap-5 justify-center'>Explore more <ArrowRight /></Button>
                 </div>
             </div>
             </div>
-
-        </div>
     </div>
   )
 }
