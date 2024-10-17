@@ -19,12 +19,12 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         search: "bg-transparent p-0 m-0 hover:bg-accent hover:text-accent-foreground",
-        commerce: "bg-[#420690] hover:bg-white border-[3px] rounded-full border-[#420690] font-semibold text-white hover:text-black text-md",
-        commerceOutline: "hover:bg-[#420690] bg-white border-[3px] rounded-full border-[#420690] font-semibold text-black hover:text-white text-md"
+        commerce: "bg-[#420690] hover:bg-white border-[3px] rounded-full border-[#420690] font-semibold text-white hover:text-black text-sm md:text-md",
+        commerceOutline: "hover:bg-[#420690] bg-white border-[3px] rounded-full border-[#420690] font-semibold text-black hover:text-white text-sm md:text-md"
       },
       size: {
-        commerce: "px-5 py-2",
-        default: "h-10 px-4 py-2",
+        commerce: "px-2 py-1 md:px-5 md:py-2",
+        default: "h-8 md:h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3",
         lg: "h-11 rounded-md px-8",
         icon: "h-10 w-10",

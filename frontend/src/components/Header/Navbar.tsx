@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from "../assets/logo-removebg-preview.png"
 import Image from 'next/image'
 import Link from 'next/link'
 import { Search, ShoppingCartIcon, User2 } from 'lucide-react'
@@ -8,11 +7,11 @@ import { Input } from "@/components/ui/input"
  
 export default function Navbar() {
   return (
-    <nav className='w-screen flex justify-center items-center p-3 bg-[#cbdcff]'>
+    <nav className='w-screen flex justify-center items-center p-3 bg-[#B3C8CF]'>
         <div className="w-full flex justify-between lg:max-w-[1390px]  gap-4 flex-wrap items-center font-semibold">
             <div className="flex items-center flex-wrap justify-between gap-4 md:gap-6 lg:gap-10">
                 <Link href="/">
-                <Image src={logo} alt='Logo' width={200} height={70} className='w-28 md:w-44' /></Link>
+                <Image src={"/logo-removebg-preview.png"} alt='Logo' width={200} height={70} className='w-28 md:w-44' /></Link>
                 <Link href="/" className='opacity-60 hidden md:flex hover:opacity-100'>Categories</Link>
                 <Link href="/" className='opacity-60 hidden md:flex hover:opacity-100'>Deels</Link>
                 <Link href="/" className='opacity-60 hidden md:flex hover:opacity-100'>Whats New</Link>

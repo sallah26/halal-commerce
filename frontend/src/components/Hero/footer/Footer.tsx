@@ -1,25 +1,19 @@
-"use client"
-
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
 import React from 'react'
-import logo from "../../assets/logo-removebg-preview-dark.png"
 import Image from 'next/image'
 import { Copyright, FacebookIcon, LinkedinIcon, LucideMessageSquareDiff, MapPin, Phone, TwitterIcon, YoutubeIcon } from 'lucide-react'
 import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <div className='w-full flex items-center justify-center text-white p-0 bg-PrimaryColor'>
+    <div className='w-screen flex items-center justify-center text-white bg-PrimaryColor'>
         <div className=" max-w-[1300px] my-14 w-full justify-between lg:my-20 flex flex-col md:flex-row items-center max-h-[37rem]" >
             <div className="flex flex-col gap-4">
-                <Image src={logo} width={250} alt='logo'/>
+                <Image src="/logo-removebg-preview-dark.png" width={250} height={100} alt='logo'/>
                 <div className="socials flex gap-4">
                     <FacebookIcon size={34} className='p-1 bg-slate-800 bg-opacity-50 rounded-md'/>
                     <YoutubeIcon size={34} className='p-1 bg-slate-800 bg-opacity-50 rounded-md'/>
                     <TwitterIcon size={34} className='p-1 bg-slate-800 bg-opacity-50 rounded-md'/>
                     <LinkedinIcon size={34} className='p-1 bg-slate-800 bg-opacity-50 rounded-md'/>
-                    
                 </div>
                 <p className="text-md flex">
                     <Copyright size={20}/>All Rights are reserved from the company!

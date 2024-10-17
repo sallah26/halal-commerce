@@ -8,7 +8,7 @@ import Subscribe from './subscribe/Subscribe'
 
 export default function Landing() {
   return (
-    <div className="landing flex mb-14 max-w-[1300px] items-center justify-center">
+    <div className="flex mb-14 w-screen max-w-[1380px] items-center justify-center">
       <div className="flex flex-col w-full items-center justify-center p-4">
         <Category />
         <FeauterdProducts />

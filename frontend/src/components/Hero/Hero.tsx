@@ -6,18 +6,8 @@ import Slider from './slider/Slider'
 
 export default function Hero() {
   return (
-    <div  >
- 
-    <div className="hero-section">
-      <div className="content">
-
-
-      <div className='hero flex flex-col items-center justify-center'>
-          <Slider />
-      </div>
-    </div>
-      </div>
-      
+      <div className=' bg-[#B3C8CF] w-screen p-4 lg:px-20 flex flex-col items-center justify-center'>
+        <Slider />
       </div>
   )
 }

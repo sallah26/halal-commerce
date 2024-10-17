@@ -5,90 +5,72 @@ import React from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 // Default theme
 import '@splidejs/react-splide/css';
-import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
-import { Separator } from '@/components/ui/separator'
-import { ArrowRight, Biohazard, BookMarkedIcon, SlidersVerticalIcon, Star, Verified } from 'lucide-react'
+import { ArrowRight, Biohazard } from 'lucide-react'
 import Image from 'next/image'
-import headsetImg from "../../assets/H220-1_headset_1024x1024@2x.webp"
 import Timer from './countdown/Timer'
-import i1 from "../../assets/discount-products/1.webp"
-import i2 from "../../assets/discount-products/2.png"
-import i3 from "../../assets/discount-products/3.webp"
-import i4 from "../../assets/discount-products/2565745.jpg"
-import i5 from "../../assets/discount-products/q1.webp"
-import i6 from "../../assets/discount-products/6.webp"
-import i7 from "../../assets/discount-products/7.webp"
-import i8 from "../../assets/discount-products/8.webp"
-import i9 from "../../assets/discount-products/9.avif"
-import i10 from "../../assets/discount-products/11.jpg"
-import i11 from "../../assets/discount-products/deskt Giveaway Instagram Post.png"
-import i12 from "../../assets/discount-products/q1.webp"
-import i13 from "../../assets/discount-products/q2.jpg"
-import i14 from "../../assets/discount-products/q3.webp"
-import i15 from "../../assets/discount-products/q4.png"
 
 export default function Discount() {
   const DiscountData = [
     {
       "id": 1,
-      "img": i1,
+      "img": "/discount-products/1.webp",
     },
     {
       "id": 2,
-      "img": i2,
+      "img": "/discount-products/2.png",
     },
     {
       "id": 3,
-      "img": i3,
+      "img": "/discount-products/3.webp",
     },
     {
       "id": 4,
-      "img": i4,
+      "img":  "/discount-products/2565745.jpg",
     },
     {
       "id": 5,
-      "img": i5,
+      "img":  "/discount-products/q1.webp",
     },
     {
       "id": 6,
-      "img": i6,
+      "img":  "/discount-products/6.webp",
     },
     {
       "id": 7,
-      "img": i7,
+      "img":  "/discount-products/7.webp",
     },
     {
       "id": 8,
-      "img": i8,
+      "img":  "/discount-products/8.webp",
     },
     {
       "id": 9,
-      "img": i9,
+      "img":  "/discount-products/9.avif",
     },
     {
       "id": 10,
-      "img": i10,
+      "img":  "/discount-products/11.jpg",
     },
     {
       "id": 11,
-      "img": i11,
+      "img":  "/discount-products/deskt Giveaway Instagram Post.png",
     },
     {
       "id": 12,
-      "img": i12,
+      "img":  "/discount-products/q1.webp",
     },
     {
       "id": 13,
-      "img": i13,
+      "img":  "/discount-products/q2.jpg",
     },
     {
       "id": 14,
-      "img": i14,
+      "img":  "/discount-products/q3.webp",
     },
     {
       "id": 15,
-      "img": i15,
+      "img":  "/discount-products/q4.png",
     },
   ]
   return (
@@ -114,7 +96,7 @@ export default function Discount() {
       {DiscountData.map((data) => (
         <SplideSlide key={data.id} className="flex items-center justify-center">
          
-          <Image src={data.img} alt={`imggg`} width={350} className='p-3 rounded-3xl ' />
+          <Image src={data.img} alt={"product image"} width={350} height={100} className='p-3 rounded-3xl ' />
         </SplideSlide>
       ))}
         

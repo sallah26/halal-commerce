@@ -47,17 +47,15 @@ export default function Category() {
   ];
 
   return (
-    <div className=" w-full my-14 flex flex-col items-center lg:items-start justify-center p-4" >
-      <div className="flex flex-col ">
-        <p className='py-5 text-3xl font-semibold'>Browse products by category</p>
-      <div className="flex flex-wrap gap-7">
+    <div className=" w-full my-14 flex flex-col gap-4 md:gap-6 items-center lg:items-start justify-center" >
+        <p className='text-2xl md:text-3xl font-semibold'>Browse products by category</p>
+      <div className="flex flex-wrap gap-4 md:gap-7">
 
       {categoryData.map((category) => (
         
           <CategoryCard key={category.id} path={category.path} title={category.title} icon={category.icon} />
         ))}
       </div>
-    </div>
     </div>
   );
 }

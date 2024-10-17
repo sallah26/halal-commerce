@@ -5,7 +5,6 @@ import { Card } from '@/components/ui/card'
 import { ArrowRight } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
-import samsungUltra from "../../assets/new-products/smsngUltra.webp"
 import { Badge } from '@/components/ui/badge'
 
 import VerticalSlider from './verticalSlider'
@@ -34,7 +33,7 @@ export default function NewProducts() {
                 </div>
             
             <div className="flex w-full justify-center p-5">
-                <Image src={samsungUltra} width={311} alt='samsung products' height={120} />
+                <Image src={"/new-products/smsngUltra.webp"} width={311} alt='samsung products' height={120} />
             </div>
             <div className="flex lg:w-1/2 items-center  mt-2 justify-center">
             
