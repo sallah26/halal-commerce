@@ -4,10 +4,14 @@ import Link from 'next/link'
 import { Search, ShoppingCartIcon, User2 } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import { cn } from '@/lib/utils'
  
-export default function Navbar() {
+interface NavbarProps {
+    Bg: boolean;
+}
+export default function Navbar({Bg}: NavbarProps) {
   return (
-    <nav className='w-screen flex justify-center items-center p-3 bg-[#B3C8CF]'>
+    <nav className={cn('w-screen flex justify-center items-center p-3', Bg && 'bg-[#B3C8CF]')}>
         <div className="w-full flex justify-between lg:max-w-[1390px]  gap-4 flex-wrap items-center font-semibold">
             <div className="flex items-center flex-wrap justify-between gap-4 md:gap-6 lg:gap-10">
                 <Link href="/">

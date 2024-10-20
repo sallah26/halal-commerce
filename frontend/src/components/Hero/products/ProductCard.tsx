@@ -46,7 +46,7 @@ import { Star } from "lucide-react";
         </CardContent>
         <div className="px-4 pb-2 md:pb-4 flex gap-2 justify-between items-center">
             <Button className="w-full" variant="commerceOutline">Add to cart</Button>
-            <Button className="w-full" variant="commerce">Buy Now</Button>
+            <Button className="w-full" variant="commerce">See Details</Button>
         </div>
       </Card>
     )
